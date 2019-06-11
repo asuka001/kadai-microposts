@@ -16,6 +16,8 @@
               <li class="dropdown-item"><%= link_to "My profile", user_path(current_user) %></li>
               <li class="dropdown-divider"></li>
               <li class="dropdown-item"><%= link_to "Logout", logout_path, method: :delete %></li>
+              <li class="dropdown-divider"></li>
+              <li class="dropdown-item"><%= link_to "likes", likes_user_path(current_user) %></li>
             </ul>
           </li>
         <% else %>
